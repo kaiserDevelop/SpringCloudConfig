@@ -3,7 +3,7 @@ server:
   
 zuul:
   routes:
-      echo-service: # Service to create as sample
+      echo: # Service to create as sample
         path: /echo/** #path that will be intercepted
         url: http://localhost:8091 #which url the request will e mapped to
         
