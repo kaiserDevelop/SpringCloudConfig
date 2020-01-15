@@ -7,6 +7,9 @@ zuul:
       echo-service:
          path: /echo/**
          url: http://localhost:8091/
+      mongo-service:
+         path: /mongo/**
+         url: http://localhost:8092/
  
 
         
