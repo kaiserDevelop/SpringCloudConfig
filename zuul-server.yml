@@ -6,8 +6,7 @@ zuul:
    routes:
       echo-service:
          path: /echo/**
-         url: http://localhost:8091
-         strip-prefix: false
+         url: http://localhost:8091/
  
 
         
