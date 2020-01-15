@@ -4,16 +4,10 @@ server:
 zuul:
    igoredServices: '*'
    routes:
-      echi-service:
+      echo-service:
          path: /echo/**
-         serviceId: echo-service
+         url: http://localhost:8091
          strip-prefix: false
  
-ribbon:
-   eureka:
-      enabled: false
- 
-weather-service:
-   ribbon:
-      listOfServers: localhost:8091
+
         
