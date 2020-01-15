@@ -2,9 +2,18 @@ server:
   port: 8080 #the default port used for zuul service
   
 zuul:
-  routes:
-      echo: # Service to create as sample
-        path: /echo/** #path that will be intercepted
-        serviceId: echo-service
-        stripPrefix: true
+   igoredServices: '*'
+   routes:
+      echi-service:
+         path: /echo/**
+         serviceId: echo-service
+         strip-prefix: false
+ 
+ribbon:
+   eureka:
+      enabled: false
+ 
+weather-service:
+   ribbon:
+      listOfServers: localhost:8091
         
