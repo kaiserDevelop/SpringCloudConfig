@@ -6,9 +6,9 @@ spring:
     gateway:
       routes:
       - id: baeldung_route
-        uri: http://baeldung.com
+        uri: http://service-one:8020
         predicates:
-        - Path=/baeldung/
+        - Path=/service-one/
   
 eureka:
   client:
