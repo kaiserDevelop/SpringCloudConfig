@@ -5,10 +5,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: saveProduct_route
-          uri: http://service-one:8020
-          predicates:
-          - Path: /service-one/**
+      - id: baeldung_route
+        uri: http://baeldung.com
+        predicates:
+        - Path=/baeldung/
   
 eureka:
   client:
